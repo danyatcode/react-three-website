@@ -1,3 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'EVAA';
+  src: url('./fonts/EVAA.ttf');
+}
+@font-face {
+  font-family: 'Chiller', sans-serif;
+  src: url('./fonts/CHILLER.TTF');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,13 +18,145 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to right, #070708, #030303, #030303, #030303,  #070708) ;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Chiller', sans-serif;
+  scroll-behavior: smooth;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.App{
-  width: 100vw;
-  height: 100vh;
+.intro-section{
+  min-height: 720px;
+}
+.nav-ul{
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+.nav-ul button{
+  font-family: 'Chiller', sans-serif;
+  border: none;
+  font-weight: 500;
+}
+.bloom{
+  z-index: 1;
+  filter: blur(9px);
+}
+.bloom-top{
+  top: -25px !important;
+  height: 100px;
+  background: linear-gradient(to bottom, #20001f, #110011, #000,  #00000027);
+}
+.bloom-bottom{
+  bottom: -20px !important;
+  height: 100px;
+  background: linear-gradient(to top, #20001f, #110011, #000,  #00000027);
+}
+.bloom-about{
+  top: 0px !important;
+  filter: blur(15px);
+  height: 180px;
+  background: linear-gradient(to bottom, #20001f,#110011, #110011, #000);
+}
+.models-section .bloom-about{
+  background: linear-gradient(to bottom, #20001f,#0a000a, #000);
+}
+.link-bloom{
+  background: linear-gradient(to bottom, #20001f, #000);
+  filter: blur(25px);
+  inset: -45px !important;
+}
+.nav-link::after{
+  content: "";
+  display: block;
+
+  position: absolute;
+  bottom: 0;
+  left: -35px;
+  right: -35px;
+  
+  height: 4px;
+  background: linear-gradient(to right, #ff6bff9a, #ff6bff, #ff6bff, #ff6bff, #ff6bff, #ff6bff ,#ff6bff, #ff6bff9a);
+  box-shadow: 0px 0px 15px 5px #ff6bff;
+}
+.intro-inner-title {
+  font-size: 1.5em;
+  letter-spacing: 5px;
+}
+/*Section about-proj */
+.container{
+  width: 1140px;
+  max-width: 98%;
+}
+
+.about-description, .about-multielem{
+  font-size: 38px;
+}
+.rside{
+  width: 55%;
+}
+.about-title, .models-section-title{
+  font-size: 3.1em;
+}
+.yuri-rside{
+  width: 40% !important;
+}
+.yuri-lside{
+  width: 55% !important;
+}
+.yuri-lside img{
+  width: 100%;
+}
+.about-multielem-bloom{
+  background-color: #5e3065;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  filter: blur(105px);
+}
+.azumi .about-multielem-bloom{
+  left: 25%;
+  top: 35%;
+  transform: translateY(-30%) translateX(-25%);
+}
+/* models section */
+.models-multielem{
+  font-size: 38px;
+}
+.models-multielem{
+  min-height: 500px;
+}
+
+@media (min-width: 1680px) {
+  body{
+    font-size: 25px;
+  }
+}
+@media (max-width: 1680px) {
+  body{
+    font-size: 20px;
+  }
+}
+@media (max-width: 1440px) {
+  .intro-inner{
+    margin: 0px 50px;
+  }
+}
+@media (max-width: 1000px) {
+  .intro-image{
+    object-fit: cover !important;
+    opacity: 0.5;
+  }
+  .models-multielem{
+    flex-direction: column;
+  }
 }

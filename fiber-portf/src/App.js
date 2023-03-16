@@ -1,32 +1,19 @@
-import { Canvas } from '@react-three/fiber'
-import { useLoader } from '@react-three/fiber'
-import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader'
-import { Environment, OrbitControls } from "@react-three/drei";
-import { Html, useProgress } from '@react-three/drei'
-import { Suspense } from 'react';
-
-function Loader() {
-  const { progress } = useProgress()
-  return <Html center>{progress} % loaded</Html>
-}
-
-function Scene() {
-  const fbx = useLoader(FBXLoader, '/azu.fbx')
-  return <primitive object={fbx} />
-}
+import AboutProj from "./components/AboutProj";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Intro from "./components/Intro";
+import ModelsSection from "./components/ModelsSection";
 
 function App() {
   return (
-    <div id="App" className='App'>
-      <Canvas>
-        <Suspense fallback={<Loader />}>
-          <OrbitControls />
-          <Environment preset="city" background />
-          <Scene />
-        </Suspense>
-      </Canvas>
+    <div className="relative z-0 app w-full m-auto">
+        <Header />
+        <Intro />
+        <Hero />
+        <AboutProj />
+        <ModelsSection />
     </div>
-  )
+  );
 }
 
 export default App;
