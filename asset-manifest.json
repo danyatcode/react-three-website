@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/react-three-website/static/css/main.cd94d244.css",
-    "main.js": "/react-three-website/static/js/main.074538d0.js",
+    "main.css": "/react-three-website/static/css/main.91531a81.css",
+    "main.js": "/react-three-website/static/js/main.4600d7ab.js",
+    "static/media/azumi_art.png": "/react-three-website/static/media/azumi_art.a80a8b45d90dc5af2a76.png",
     "static/media/CHILLER.TTF": "/react-three-website/static/media/CHILLER.dada7af8013fddbe6088.TTF",
     "static/media/EVAA.ttf": "/react-three-website/static/media/EVAA.6324f2acc1c64f50f4c0.ttf",
     "index.html": "/react-three-website/index.html",
-    "main.cd94d244.css.map": "/react-three-website/static/css/main.cd94d244.css.map",
-    "main.074538d0.js.map": "/react-three-website/static/js/main.074538d0.js.map"
+    "main.91531a81.css.map": "/react-three-website/static/css/main.91531a81.css.map",
+    "main.4600d7ab.js.map": "/react-three-website/static/js/main.4600d7ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd94d244.css",
-    "static/js/main.074538d0.js"
+    "static/css/main.91531a81.css",
+    "static/js/main.4600d7ab.js"
   ]
 }
