@@ -1,5 +1,4 @@
 import React from 'react'
-import azumiArt from "./images/azumi_art.png"
 
 const AboutProj = () => {
   return (

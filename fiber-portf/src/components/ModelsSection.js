@@ -16,7 +16,7 @@ const ModelsSection = () => {
                     One of the 3D models is Azumi in experimental armor, which increases already high combat capabilities, and is essentially an exoskeleton with hinged composite plates and power from a compact nuclear reactor
                 </div>
             </div>
-            <div className='models-multielem-right w-3/5 relative'>
+            <div className='models-multielem-right w-3/5 relative models models-azumi'>
                 <div className=''></div>
                 <Azumi />
             </div>

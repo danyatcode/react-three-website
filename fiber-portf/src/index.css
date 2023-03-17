@@ -3,11 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'EVAA';
-  src: url('./fonts/EVAA.ttf');
-}
-@font-face {
-  font-family: 'Chiller', sans-serif;
+  font-family: 'Chiller';
   src: url('./fonts/CHILLER.TTF');
 }
 
@@ -26,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Chiller', sans-serif;
+  font-family: 'Chiller';
   scroll-behavior: smooth;
 }
 
@@ -42,7 +38,6 @@ code {
   letter-spacing: 2px;
 }
 .nav-ul button{
-  font-family: 'Chiller', sans-serif;
   border: none;
   font-weight: 500;
 }
@@ -94,7 +89,7 @@ code {
 /*Section about-proj */
 .container{
   width: 1140px;
-  max-width: 98%;
+  max-width: 95%;
 }
 
 .about-description, .about-multielem{
@@ -136,6 +131,9 @@ code {
   min-height: 500px;
 }
 
+.models, .canvas-div, .canvas-div > div, .canvas-div > div > div{
+  min-height: 500px;
+}
 @media (min-width: 1680px) {
   body{
     font-size: 25px;
@@ -156,7 +154,22 @@ code {
     object-fit: cover !important;
     opacity: 0.5;
   }
-  .models-multielem{
+  .models-multielem, .about-multielem{
     flex-direction: column;
+    align-items: center;
+    width: 100% !important;
+  }
+  .lside, .rside{
+    display: flex;
+    flex-direction: column;
+    width: 95% !important; 
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .azumi.about-multielem{
+    flex-direction: column-reverse;
+  }
+  .models-multielem-lefts, .models-multielem-right{
+    width: 95% !important;
   }
 }
