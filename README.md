@@ -10,4 +10,4 @@
  * React Scroll Parallax
  * Tailwind CSS
 
-### Link: [Website](danyatcode.github.io/react-three-website/)
+### Link: [Website](https://danyatcode.github.io/react-three-website/)
