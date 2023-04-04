@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-three-website/static/css/main.1adfc392.css",
-    "main.js": "/react-three-website/static/js/main.60c8352d.js",
+    "main.js": "/react-three-website/static/js/main.8ef7984f.js",
     "static/media/CHILLER.TTF": "/react-three-website/static/media/CHILLER.dada7af8013fddbe6088.TTF",
     "index.html": "/react-three-website/index.html",
     "main.1adfc392.css.map": "/react-three-website/static/css/main.1adfc392.css.map",
-    "main.60c8352d.js.map": "/react-three-website/static/js/main.60c8352d.js.map"
+    "main.8ef7984f.js.map": "/react-three-website/static/js/main.8ef7984f.js.map"
   },
   "entrypoints": [
     "static/css/main.1adfc392.css",
-    "static/js/main.60c8352d.js"
+    "static/js/main.8ef7984f.js"
   ]
 }
