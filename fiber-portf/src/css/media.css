@@ -1,0 +1,117 @@
+/* media */
+
+@media (min-width: 1680px) {
+    body{
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 1680px) {
+    body{
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 1440px) {
+    .intro-inner{
+      margin: 0px 50px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .intro-image{
+      object-fit: cover !important;
+      opacity: 0.5;
+    }
+    .models-multielem, .about-multielem{
+      flex-direction: column;
+      align-items: center;
+      width: 100% !important;
+    }
+    .lside, .rside{
+      display: flex;
+      flex-direction: column;
+      width: 95% !important; 
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    .azumi.about-multielem{
+      flex-direction: column-reverse;
+    }
+    .models-multielem-lefts, .models-multielem-right{
+      width: 95% !important;
+    }
+  }
+  @media (max-width: 875px) {
+  
+    header{
+      position: fixed !important;
+      transition: 350ms;
+    }
+    header{
+      left: auto !important;
+      right: -100% !important;
+      top: 0 !important;
+      bottom: 0 !important;
+  
+      width: 100% !important;
+      background-color: #000;
+      padding: 30px 0px !important;
+    }
+    header.active{
+      left: 0 !important;
+      right: 0 !important;
+    }
+    header nav{
+      justify-content: center !important;
+    }
+    header nav, .nav-ul{
+      width: 100%;
+      height: 100%;
+    }
+    .nav-ul{
+      flex-direction: column;
+      margin-right: 0px !important;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 0px !important;
+    }
+    .header-menu{
+      display: block !important;
+    }
+    .glitch{
+      font-size: 3.275rem;
+    }
+  }
+  @media (max-width: 685px) {
+    .glitch-title{
+      font-size: 4rem;
+    }
+    .intro-inner-title{
+      margin-top: 0 !important;
+    }
+    .intro-title{
+      font-size: 2.75rem;
+    }
+    .container{
+      max-width: 87%;
+    }
+    .intro-inner {
+      transform: translateY(78px);
+      margin: 0 !important;
+    }
+    .text{
+      font-size: 3rem !important;
+      padding: 30px 0px !important;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-delay: -1ms !important;
+      animation-duration: 1ms !important;
+      animation-iteration-count: 1 !important;
+      background-attachment: initial !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0s !important;
+      transition-delay: 0s !important;
+    }
+  }

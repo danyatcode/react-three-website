@@ -1,7 +1,7 @@
 import React from 'react'
-import AboutProject from './AboutProject'
-import Intro from './Intro'
-import ModelsSection from './canvas/ModelsSection'
+import AboutProject from './sections/AboutProject'
+import Intro from './sections/Intro'
+import ModelsSection from './sections/ModelsSection'
 import { ParallaxProvider } from 'react-scroll-parallax'
 
 const Home = () => {

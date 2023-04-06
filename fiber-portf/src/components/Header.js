@@ -16,18 +16,33 @@ const Header = () => {
         <ul className='flex align-middle gap-28 mr-20 nav-ul'>
             <li className='nav-link relative'>
                 <div className='absolute link-bloom inset-0'></div>
-                <button className='about-link uppercase relative cursor-pointer'>About</button>
+                <button className='about-link uppercase relative cursor-pointer'>
+                  <div className='button-anime absolute'></div>
+                  <div className='button-ellips ellipse-one absolute'></div>
+                  <div className='button-ellips ellipse-two absolute'></div>
+                  <span>About</span> 
+                </button>
             </li>
             <li className='nav-link relative'>
                 <div className='absolute link-bloom inset-0'></div>
-                <button className='service-link uppercase relative cursor-pointer'>service</button>
+                <button className='service-link uppercase relative cursor-pointer'>
+                  <div className='button-anime absolute'></div>
+                  <div className='button-ellips ellipse-one absolute'></div>
+                  <div className='button-ellips ellipse-two absolute'></div>
+                  <span>service</span>
+                  </button>
             </li>
             <li className='nav-link relative'>
                 <div className='absolute link-bloom inset-0'></div>
-                <button className='contacts-link uppercase relative cursor-pointer'>contacts</button>
+                <button className='contacts-link uppercase relative cursor-pointer'>
+                <div className='button-anime absolute'></div>
+                  <div className='button-ellips ellipse-one absolute'></div>
+                  <div className='button-ellips ellipse-two absolute'></div>
+                  <span>contacts</span>
+                </button>
             </li>
             <button ref={burgerButton} className='header-menu' onClick={() => handleClick()}>
-              <span></span>
+              <span className="block absolute bg-white"></span>
             </button>
         </ul>
         

@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import Model from "./components/canvas/Model";
 import Azumi3 from "./components/canvas/Azumi3"
 
 function App() {
@@ -53,14 +52,14 @@ function App() {
     <>
     {
     <div className="relative z-0 app w-full m-auto">
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Routes>
-          <Route path="react-three-website/" element={<Home />}/>
-          <Route path="react-three-website/models/:modelId" element={<Azumi3 />}/>
+          <Route path={`/`} element={<Home />}/>
+          <Route path={`models/:modelId`} element={<Azumi3 />}/>
         </Routes>
           
-      </BrowserRouter>
+      </HashRouter>
     </div>
     } 
     </>
