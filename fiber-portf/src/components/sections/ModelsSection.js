@@ -26,7 +26,7 @@ const ModelsSection = () => {
         ModelsData.map((model, i) => model.id % 2 !== 0?
         <div key={i} className="flex items-center justify-center flex-col">
           <Parallax
-           translateY={isMobile? [-10, 10]: [-30, 30]}
+           translateY={isMobile? [0, 0]: [-30, 30]}
             style={{zIndex: "50"}}
           >
             <div className={`model-title ${model.name}-title`}><span>{model.name}</span><div className='model-title-bloom'></div></div>
@@ -40,9 +40,12 @@ const ModelsSection = () => {
               <div className={`models-multielem-right w-3/6 relative models models-${model.name}`}>
                   <div className=''></div>
                   <Parallax
-                    translateY={isMobile? [-20, 5]: [5, -20]}
+                    translateY={isMobile? [0, 0]: [5, -20]}
                     >
-                  <Link to={"models/"+ model.id}><img loading="lazy" className='models-preview' src={model.image} alt={model.name}/></Link>
+                  <Link to={"models/"+ model.id}>
+                    <div className='hint'>{isMobile? "Tap ": "Click "}to see preview</div>
+                    <img loading="lazy" className='models-preview' src={model.image} alt={model.name}/>
+                  </Link>
                   </Parallax>
               </div>
             </div>
@@ -51,7 +54,7 @@ const ModelsSection = () => {
         :
           <div key={i} className="flex items-center justify-center flex-col">
             <Parallax
-              translateY={isMobile? [-10, 10]: [-30, 30]}
+              translateY={isMobile? [0, 0]: [-30, 30]}
               style={{zIndex: "50"}}
             >
             <div className={`model-title ${model.name}-title`}><span>{model.name}</span><div className='model-title-bloom'></div></div>
@@ -60,9 +63,12 @@ const ModelsSection = () => {
               <div className={`models-multielem-right w-3/6 relative models models-${model.name} `}>
                   <div className=''></div>
                   <Parallax
-                    translateY={isMobile? [-20, 5]: [20, -20]}
+                    translateY={isMobile? [0, 0]: [20, -20]}
                     >
-                  <Link to={"models/"+ model.id}><img loading="lazy" className='models-preview' src={model.image} alt={model.name}/></Link>
+                  <Link to={"models/"+ model.id}>
+                    <img loading="lazy" className='models-preview' src={model.image} alt={model.name}/>
+                    <div className='hint'>{isMobile? "Tap ": "Click "}to see preview</div>
+                    </Link>
                   </Parallax>
               </div>
               <div className='models-multielem-lefts w-5/12'>

@@ -12,7 +12,7 @@ const YuriSection = () => {
             <div className='about-multielem-bloom z-0 absolute w-3/4 h-3/4'></div>
             
             <Parallax
-                translateY={isMobile? [-20, 5]: [-20, 10]}
+                translateY={isMobile? [0, 0]: [-20, 10]}
                 className='w-full h-full'
             >
                 <div className='relative horns-parallax h-full w-full'>

@@ -21,7 +21,7 @@ const AzumiSection = () => {
         <div className='rside relative'>
             <div className='about-multielem-bloom z-0 absolute w-3/4 h-3/4'></div>
             <Parallax
-                translateY={isMobile? [-20, 5]: [20, -20]}
+                translateY={isMobile? [0, 0]: [20, -20]}
                 className='w-full h-full'
             >
                 <div className='relative horns-parallax h-full w-full'>

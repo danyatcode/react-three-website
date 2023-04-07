@@ -1,29 +1,28 @@
-import {MeshPhysicalMaterial} from "three"
+import { MeshPhysicalMaterial } from "three"
 import { useMemo } from 'react'
 import { Canvas, applyProps } from '@react-three/fiber'
 import { Center, OrbitControls, Environment, useGLTF } from '@react-three/drei'
 import { Effect } from './Effect'
 
 
-export default function App() {
+export default function Model() {
   return (
     <div className='w-full h-full canvas-div' style={{height: "100vh"}}>
-    <Canvas shadows camera={{ position: [8, 1.5, 8], fov: 25 }}>
-      <group position={[0, -0.5, 0]}>
-      <directionalLight position={[-10, 10, 0]} intensity={0.9} />
-        <directionalLight position={[-70, 10, 55]} intensity={0.5} />
-        <directionalLight position={[50, 50, -20]} intensity={0.3} />
-        <directionalLight position={[-2, -10, 0]} intensity={0.5} />
-        <Center top>
-          <Suzi scale={0.24} rotation={[0, 1.2, 0]}/>
-        </Center>
-        <Effect />    
-      </group>
-      <OrbitControls minPolarAngle={0} maxPolarAngle={Math.PI / 2} />
-
-      <Environment preset="city">
-      </Environment>
-    </Canvas>
+      <Canvas shadows camera={{ position: [8, 1.5, 8], fov: 25 }}>
+        <group position={[0, -0.5, 0]}>
+        <directionalLight position={[-10, 10, 0]} intensity={0.9} />
+          <directionalLight position={[-70, 10, 55]} intensity={0.5} />
+          <directionalLight position={[50, 50, -20]} intensity={0.3} />
+          <directionalLight position={[-2, -10, 0]} intensity={0.5} />
+          <Center top>
+            <Suzi scale={0.24} rotation={[0, 1.2, 0]}/>
+          </Center>
+          <Effect />  
+        </group>
+        <OrbitControls minPolarAngle={0} maxPolarAngle={Math.PI / 2} />
+        <Environment preset="city">
+        </Environment>
+      </Canvas>
     </div>
   )
 }
