@@ -1,5 +1,4 @@
 import React from 'react';
-import { Parallax } from 'react-scroll-parallax';
 import AzumiSection from './heroesSections/AzumiSection';
 import YuriSection from './heroesSections/YuriSection';
 

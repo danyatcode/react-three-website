@@ -1,16 +1,25 @@
-import React from 'react'
-import AboutProject from './sections/AboutProject'
-import Intro from './sections/Intro'
-import ModelsSection from './sections/ModelsSection'
+import React, { Suspense, lazy } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
+
+const AboutProject = lazy(() => import('./sections/AboutProject'));
+const Intro = lazy(() => import('./sections/Intro'));
+const ModelsSection = lazy(() => import('./sections/ModelsSection'));
+
 
 const Home = () => {
   return (
     <>
       <ParallaxProvider>
-        <Intro />
-        <AboutProject />
-        <ModelsSection />
+        <Suspense fallback={"Loading..."}>
+          <Intro />
+        </Suspense>
+        <Suspense fallback={"Loading About Info..."}>
+          <AboutProject />
+        </Suspense>
+        <Suspense fallback={"Loading 3D Models..."}>
+          <ModelsSection />
+        </Suspense>
+        
       </ParallaxProvider>
     </>
   )
