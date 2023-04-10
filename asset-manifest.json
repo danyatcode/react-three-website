@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/react-three-website/static/css/main.335e7458.css",
-    "main.js": "/react-three-website/static/js/main.79fe448c.js",
+    "main.js": "/react-three-website/static/js/main.051f5334.js",
     "static/js/279.052af860.chunk.js": "/react-three-website/static/js/279.052af860.chunk.js",
-    "static/js/42.4cc277ca.chunk.js": "/react-three-website/static/js/42.4cc277ca.chunk.js",
+    "static/js/42.e0b74d44.chunk.js": "/react-three-website/static/js/42.e0b74d44.chunk.js",
     "static/js/686.24319e00.chunk.js": "/react-three-website/static/js/686.24319e00.chunk.js",
     "static/js/601.2b8821e3.chunk.js": "/react-three-website/static/js/601.2b8821e3.chunk.js",
     "static/media/CHILLER.TTF": "/react-three-website/static/media/CHILLER.dada7af8013fddbe6088.TTF",
     "index.html": "/react-three-website/index.html",
     "main.335e7458.css.map": "/react-three-website/static/css/main.335e7458.css.map",
-    "main.79fe448c.js.map": "/react-three-website/static/js/main.79fe448c.js.map",
+    "main.051f5334.js.map": "/react-three-website/static/js/main.051f5334.js.map",
     "279.052af860.chunk.js.map": "/react-three-website/static/js/279.052af860.chunk.js.map",
-    "42.4cc277ca.chunk.js.map": "/react-three-website/static/js/42.4cc277ca.chunk.js.map",
+    "42.e0b74d44.chunk.js.map": "/react-three-website/static/js/42.e0b74d44.chunk.js.map",
     "686.24319e00.chunk.js.map": "/react-three-website/static/js/686.24319e00.chunk.js.map",
     "601.2b8821e3.chunk.js.map": "/react-three-website/static/js/601.2b8821e3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.335e7458.css",
-    "static/js/main.79fe448c.js"
+    "static/js/main.051f5334.js"
   ]
 }
