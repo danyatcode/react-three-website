@@ -4,8 +4,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 /* font-family: 'Inter', sans-serif; */
+
 @import url(keyframes.css);
+
 @import url(glitches.css);
+
 @font-face {
   font-family: 'Chiller';
   src: url('../fonts/CHILLER.TTF');
@@ -21,10 +24,10 @@ body {
 }
 
 * {
+  font-family: 'Chiller';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Chiller';
   scroll-behavior: smooth;
 }
 a{
